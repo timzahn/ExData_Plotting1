@@ -14,6 +14,6 @@ dataset <- subset(power_data, upper_boundary >= power_data$dateTime & power_data
 
 #Create first figure
 hist(dataset$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
-dev.copy(png, file="./figure/plot1.png")
+dev.copy(png, file="plot1.png")
 dev.off()
 
