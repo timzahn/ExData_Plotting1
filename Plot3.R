@@ -11,7 +11,7 @@ upper_boundary <-strptime("2007-02-02 23:59:59",format="%Y-%m-%d %H:%M:%S")
 dataset <- subset(power_data, upper_boundary >= power_data$dateTime & power_data$dateTime >= under_boundary)
 
 
-#Create third graph
+#Create third figure
 
 plot(dataset$dateTime, dataset$Sub_metering_1,  type="l" , xlab="", ylab="Energy sub metering")
 lines(dataset$dateTime,dataset$Sub_metering_2, col="red")

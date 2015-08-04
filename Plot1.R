@@ -1,4 +1,5 @@
 #***Create Plot 1
+Sys.setlocale("LC_TIME", "English")
 #Read data
 power_data<- read.csv(".\\data\\household_power_consumption.csv", sep=";", na.strings = "?")
 power_data$dateTime <- strptime(paste(power_data$Date, power_data$Time), "%d/%m/%Y %H:%M:%S")
